@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Welcome to JavaScript</title>
+        <h1>Application of Arrays</h1>
+        <script>
+        let shoppingList=["Oil","Coconut","Wheat","Sugar","Onion"];
+        let shoppingBasket=[];
+        for (let i of shoppingList)
+        {
+            shoppingBasket.push(i);
+        }
+        
+        let anymore=confirm("Do you want to Buy any other grocery:");
+        while(anymore==true) {
+            
+            let element=prompt("Enter grocery item");
+            shoppingBasket.push(element);
+            console.log(shoppingBasket);
+            anymore=confirm("Do you want to Buy any other grocery:");
+        } 
+        </script>      
+    
+    <body>
+       
+    </body>
+    </head>
+</html>
