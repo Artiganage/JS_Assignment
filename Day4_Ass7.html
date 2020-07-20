@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Welcome to JavaScript</title>
+        <h1>Prime number</h1>
+        <script>
+        let num=prompt("Enter the number till which you want to print prime numbbers");
+        for (var counter = 2; counter <= num; counter++) {
+
+        var notPrime = false;
+        for (var i = 2; i <= counter; i++) {
+            if (counter%i===0 && i!==counter) {
+                notPrime = true;
+            }
+        }
+        if (notPrime === false) {
+            console.log(counter);
+        }
+    }
+        
+        </script>      
+    
+    <body>
+       
+    </body>
+    </head>
+</html>
