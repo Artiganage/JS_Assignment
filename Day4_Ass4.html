@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Welcome to JavaScript</title>
+        <h1>CALCULATOR</h1>
+        <script>
+        let num1=55;
+        let num2=43;
+        let confirmed;
+        do {
+            
+        let operator=prompt("Enter the operator(+,-,*,/,%,sqrt)");
+        switch (operator) {
+            case '+':
+                console.log("Addition: "+(num1+num2));
+                break;
+
+            case '-':
+                console.log("Subtraction: "+(num1-num2));
+                break;
+
+            case '*':
+                console.log("Multiplication: "+(num1*num2));
+                break;
+
+            case '/':
+                console.log("Division: "+(num1/num2));
+                break;
+
+            case '%':
+                per=Math.abs((num1-num2)/num1)*100;
+                console.log("percentage: "+per);
+                break;
+
+            case 'sqrt':
+                console.log("Square root: "+Math.sqrt(num1));
+                break;
+        
+            default:
+            console.log("Invalid operation");
+                break;
+        }
+         confirmed=confirm("Do you want to continue?");
+        } while (confirmed==true);
+        
+        </script>      
+    
+    <body>
+       
+    </body>
+    </head>
+</html>
