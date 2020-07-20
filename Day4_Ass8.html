@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Welcome to JavaScript</title>
+        <h1>Arrow Function</h1>
+        <script>
+        
+       let ask=(question,yes,no)=>(confirm(question))? yes(): no();
+
+        ask("Do you agree?",
+            function(){
+                alert("you agreed.");
+            },
+            function (){
+                alert("You cancelled th excecution");
+            })
+        
+        </script>      
+    
+    <body>
+       
+    </body>
+    </head>
+</html>
