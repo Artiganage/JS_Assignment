@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Welcome to JavaScript</title>
+        <h1>Conditional Statements</h1>
+        <script>
+        let sales=prompt("Enter the sales made during this year");
+        let commision_percent=0; 
+        let commision=0;
+        if(sales>=0 && sales<=5000)
+        {
+            commision_percent=2;
+            console.log("commision percentage: "+commision_percent);
+            commision=(commision_percent/100)*sales;
+            console.log("Total Commision earned: "+commision);
+        }
+
+        else if(sales>=5001 && sales<=10000)
+        {
+            commision_percent=5;
+            console.log("commision percentage: "+commision_percent);
+            commision=(commision_percent/100)*sales;
+            console.log("Total Commision earned: "+commision);
+        }
+
+        else if(sales>=10001 && sales<=20000)
+        {
+            commision_percent=7;
+            console.log("commision percentage: "+commision_percent);
+            commision=(commision_percent/100)*sales;
+            console.log("Total Commision earned: "+commision);
+        }
+
+        else
+        {
+            commision_percent=10;
+            console.log("commision percentage: "+commision_percent);
+            commision=(commision_percent/100)*sales;
+            console.log("Total Commision earned: "+commision);
+        }
+        
+        </script>      
+    
+    <body>
+       
+    </body>
+    </head>
+</html>
