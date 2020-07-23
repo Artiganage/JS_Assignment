@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Welcome to JavaScript</title>
+        <h1>Higher Order Function</h1>
+        <script>
+        
+        let arr=[];
+        let odd_arr=[];
+        let cube_odd_arr=[];
+        let Confirm=confirm("Do you want to add any number to the array?");
+        while(Confirm==true) {
+            
+            let num=Number(prompt("Enter the Number that to be add to array: "));
+            arr.push(num);
+            
+            Confirm=confirm("Do you want to add any number to the array?");
+        } 
+        console.log("Array:- "+arr);
+        
+        odd_arr=arr.filter((el)=>{
+            if(el%2!==0){
+                return(el);
+            }
+        })
+        console.log("Odd Numbers:- "+odd_arr);
+
+        cube_odd_arr=odd_arr.map((el)=>{
+            return(el**3);
+        })
+        console.log("cube of Odd Numbers:- "+cube_odd_arr);
+
+        </script>      
+    
+    <body>
+       
+    </body>
+    </head>
+</html>
