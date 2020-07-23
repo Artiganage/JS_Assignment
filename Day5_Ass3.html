@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Welcome to JavaScript</title>
+        <h1>Promises, Async, Await, Fetch </h1>
+        <script>
+
+        async function fetchjokes(){
+            const res=await fetch('https://api.jokes.one/jod?category=animal');
+            const data=await res.json();
+            console.log(data);
+        }
+        fetchjokes();
+
+        </script>      
+    
+    <body>
+       
+    </body>
+    </head>
+</html>
