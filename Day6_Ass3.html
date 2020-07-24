@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Welcome to JavaScript</title>
+        <h1>Day6 Assignment 3 </h1>
+        <h2 id="time"></h2>
+        </head>
+        <script>
+
+        let name=prompt("Enter the name");
+        document.write("Welcome "+name+"<br>");
+
+        const ctime=document.getElementById('time');
+        function clock(){
+            let date=new Date();
+            let time= date.toLocaleTimeString();
+            ctime.innerText = time;
+        }
+
+        setInterval(clock,1000) ;
+
+        
+        function changeColor() {
+            setTimeout(() => {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }, 3000);
+            
+        }
+        changeColor();
+
+        </script>      
+    
+    <body>
+        
+      
+
+    </body>
+    
+</html>
