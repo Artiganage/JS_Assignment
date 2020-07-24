@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Welcome to JavaScript</title>
+        <h1>Change background color </h1>
+        </head>
+        <script>
+
+        
+        let colors = ["red","orange","green","blue","brown","purple","gray","white","yellow","pink","gold","indigo","lavender","lime"]
+        let colorIndex = 0
+        function changeColor() {
+            document.bgColor = colors[colorIndex]
+            colorIndex = (colorIndex + 1);
+            }
+            function startColorChange() {
+                 setInterval("changeColor()",5000);
+            }
+            window.onload = startColorChange;
+
+
+        </script>      
+    
+    <body>
+        
+        
+    </body>
+    
+</html>
